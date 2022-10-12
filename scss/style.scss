@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: auto;  
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: #BE3144FF;
+    font-size: 24px;
+    text-align: center;      
+
+    &_list {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        height: 60px;
+        align-items: center;
+        
+        &__point {
+            padding: 16px 20px;
+            color: aliceblue;
+            text-decoration: none;            
+        }
+
+        &__point:hover {
+            transition: all .3s;
+            background:rgb(90, 97, 161);
+        }
+    }
+}
+#welcome {
+    background: #252528FF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        color: aliceblue;
+        font-size: 58px;
+    }
+    .web {
+        color: rgb(192, 77, 77);
+        font-size: 36px;
+        font-family:monospace;
+    }
+}
+
+#works {
+    background: #45567DFF;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    
+    .works_list {
+        margin: 0 auto;
+
+        &__title {
+            color: aliceblue;
+            font-size: 32px;
+            text-align: center;
+            border-bottom: .3px solid;
+            font-family: 'Times New Roman', Times, serif;
+            width: max-content;
+            margin: 65px auto;
+            margin-bottom: 0px;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .project {
+                margin: 50px 10px;
+                width: 30%;
+                background: #303841FF;
+                
+                &_link {
+                    text-decoration: none;
+                    background: #303841FF;
+                }
+                &_title {
+                    color: aliceblue;
+                    text-align: center;
+                    font-size: 18px;
+                    padding: 10px;
+                    margin: 0 auto;
+                    background: #303841FF;
+
+                    .code {
+                        color: #303841FF;
+                        transition: color 0.3s ease-out; 
+                    }
+                }    
+                .project_link:hover .code {
+                    color: rgb(240, 156, 46);  
+                }        
+                &_image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .button{
+            display: flex;
+            transition: all 0.2s ease-in-out;
+
+            .btn {
+                width: max-content;
+                margin: 60px auto;
+                background: #303841FF;
+                padding: 15px 20px;
+                font-size: 24px;
+                color: aliceblue;
+                border: 0px;
+                border-radius: 3px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                cursor: pointer;
+            }
+            .btn:hover {
+                background: #BE3144FF;
+                transition: 0.3s ease-out; 
+            }
+        }
+    }   
+}
+.contacts {
+    margin: 0 auto;
+    height: 100vh;
+    background: #303841FF;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &_contact {
+
+            &__title{
+                font-size: 62px;
+            }
+            &__descript{
+                font-size: 24px;
+                text-align: center;
+                font-style: italic;
+            }
+    }
+    .contacts_links__link {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    
+
+    &___li {
+        color: aliceblue;
+        font-size: 28px;
+        text-decoration: none; 
+    }
+    } 
+    .list_style {
+        list-style: none;
+        margin: 0 25px;            
+    }
+    .list_style:hover {
+        transform: translateY(10px);
+        transition: 0.2s;
+    }
+}
+.line {
+    border-bottom: solid 3px #BE3144FF;
+}  
+.instruction {
+    margin: 0;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background: #303841FF;
+    color: aliceblue;
+}
