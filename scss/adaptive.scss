@@ -24,7 +24,7 @@
         font-size: 22px;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
     .navbar {
         font-size: 20px;
    
@@ -48,7 +48,7 @@
     }
     
     #works .works_list .projects .project {
-        width: 60%;
+        width: 50%;
 
         &__title{ 
             font-size: 12px;
@@ -84,37 +84,5 @@
     }
     .instruction {
         padding: 10px 5px 20px 10px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #welcome {
-        h1 {
-            font-size: 26px;
-        }
-        
-        .web {
-            font-size: 20px;
-        }
-    }
-    #works {
-        .works_list__title {
-            font-size: 18px;
-        }
-        .works_list .projects .project {
-            width: 55%;
-
-        }
-    }
-    .contacts_contact__title {
-        font-size: 24px;
-    }
-    .contacts_contact__descript {
-        margin-top: 20px;
-        font-size: 18px;
-    }
-
-    .instruction {
-        padding-left: 15px;
     }
 }
