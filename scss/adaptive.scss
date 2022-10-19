@@ -7,7 +7,7 @@
             font-size: 22px;
         }
     }
-
+    
     .project {
         width: 40%;
     }
@@ -52,7 +52,7 @@
         font-size: 24px;
     }
     
-    .project {
+    .works_list .projects .project {
         width: 50%;
 
         &_title { 
@@ -66,17 +66,18 @@
     }   
 
     .contacts_contact__title {
-        font-size: 32px;
+        font-size: 24px;
 
         &__desc{
             font-size: 16px;
-
         }
     }
-    .list_style {
+    .contacts .list_style {
         margin: 15px 5px; 
     }
     .instruction {
-        padding: 10px 5px 20px 10px;
+        font-size: 14px;
+        padding: 10px 20px;
+        text-align: center;
     }
 }

@@ -60,7 +60,7 @@ body {
     height: max-content;
     display: flex;
     
-    .works_list {
+    &_list {
         margin: 0 auto;
 
         &__title {
@@ -145,11 +145,10 @@ body {
     flex-direction: column;
 
     &_contact {
-
             &__title{
                 font-size: 62px;
             }
-            &__descript{
+            &__desc{
                 font-size: 24px;
                 text-align: center;
                 font-style: italic;
@@ -160,13 +159,12 @@ body {
     flex-wrap: nowrap;
     margin-top: 70px;
     margin-bottom: 100px;
-    
 
-    &___li {
-        color: aliceblue;
-        font-size: 28px;
-        text-decoration: none; 
-    }
+        &___li {
+            color: aliceblue;
+            font-size: 28px;
+            text-decoration: none; 
+        }
     } 
     .list_style {
         list-style: none;
