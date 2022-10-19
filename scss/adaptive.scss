@@ -1,9 +1,8 @@
 @media screen and (max-width: 768px) {
-    #welcome {
+    .welcome {
         h1 {
             font-size: 32px;
         }
-        
         .web {
             font-size: 22px;
         }
@@ -15,13 +14,19 @@
     .contacts_contact__title {
         font-size: 36px;
 
-        &__descript{
+        &__desc{
             font-size: 16px;
-
         }
     }
-    .contacts .contacts_links__link___li {
-        font-size: 22px;
+    .contacts_links__link {
+        flex-direction: column;
+        margin-bottom: 0px;
+        
+        &___li {
+            color: rgb(229, 231, 233);
+            font-size: 22px;
+            text-decoration: none; 
+        }
     }
 }
 @media screen and (max-width: 420px) {
@@ -33,7 +38,7 @@
             justify-content: center;
         }
     }
-    #welcome {
+    .welcome {
         h1 {
             font-size: 28px;
         }
@@ -43,18 +48,19 @@
         }
     }
 
-    #works .works_list__title {
+    .works_list__title {
         font-size: 24px;
     }
     
-    #works .works_list .projects .project {
+    .project {
         width: 50%;
 
-        &__title{ 
+        &_title { 
             font-size: 12px;
         }
     }
-    #works .works_list .button .btn {
+    
+    .btn {
         margin: 30px auto;
         font-size: 14px;
     }   
@@ -62,24 +68,12 @@
     .contacts_contact__title {
         font-size: 32px;
 
-        &__descript{
+        &__desc{
             font-size: 16px;
 
         }
     }
-
-    .contacts .contacts_links__link {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0px;
-        
-    .contacts .contacts_links__link___li {
-            color: rgb(229, 231, 233);
-            font-size: 22px;
-            text-decoration: none; 
-        }
-    }
-    .contacts .list_style {
+    .list_style {
         margin: 15px 5px; 
     }
     .instruction {
